@@ -1,0 +1,64 @@
+# Игнорируем всё содержимое .git
+.git
+
+# Игнорируем node_modules — они устанавливаются внутри контейнера по package-lock.json / yarn.lock
+node_modules
+
+# Логи и системные файлы
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Кэш и временные файлы
+.cache/
+.next/
+.nuxt/
+.cache/
+.vercel/
+.pnp.*
+.pnp.js
+
+# IDE и редакторы
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Локальные конфиги и переменные окружения
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
+
+# Тесты и артефакты сборки (если они не нужны в образе)
+coverage/
+reports/
+dist/
+build/
+out/
+.cache/
+
+# Docker-файлы (чтобы не копировать их внутрь контейнера, если не нужно)
+Dockerfile
+docker-compose.yml
+docker-compose.*.yml
+
+# Прочие зависимости и пакеты
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# macOS
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+$RECYCLE.BIN/
+Desktop.ini
